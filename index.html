@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+          <center>
+          <h1>Calculator</h1>
+          <form>
+            <input type="text" name="answer">
+             <table>
+             <tr>
+             <td><input type="button" value="7" onclick="form.answer.value+= '7' "></td>
+             <td><input type="button" value="8" onclick="form.answer.value+= '8' "></td>
+             <td><input type="button" value="9" onclick="form.answer.value+= '9' "></td>
+             </tr>
+             <tr>
+             <td><input type="button" value="6" onclick="form.answer.value+= '6' "></td>
+             <td><input type="button" value="5" onclick="form.answer.value+= '5' "></td>
+             <td><input type="button" value="4" onclick="form.answer.value+= '4' "></td>
+             </tr>
+             <tr>
+             <td><input type="button" value="3" onclick="form.answer.value+= '3' "></td>
+             <td><input type="button" value="2" onclick="form.answer.value+= '2' "></td>
+             <td><input type="button" value="1" onclick="form.answer.value+= '1' "></td>   
+             </tr>
+             <tr>
+             <td><input type="button" value="0" onclick="form.answer.value+= '0' "></td>
+             <td><input type="button" value="/" onclick="form.answer.value+= '/' "></td>
+             <td><input type="button" value="*" onclick="form.answer.value+= '*' "></td> 
+             <tr>
+             <td><input type="button" value="+" onclick="form.answer.value+= '+' "></td>
+             <td><input type="button" value="-" onclick="form.answer.value+= '-' "></td>
+             <td><input type="button" value="=" onclick="form.answer.value=eval(form.answer.value)"></td> 
+             </tr>
+             <tr>
+             <td><input type="button" value="Clear" onclick="form.answer.value= '' "></td>
+             <td><input type="button" value="Delete" onclick="form.answer.value = form.answer.value.substr(0,form.answer.value.length-1)"></td> 
+             </tr>
+             </table>
+          </form>
+          </center>
+</body>
+</html>
+
+
+
